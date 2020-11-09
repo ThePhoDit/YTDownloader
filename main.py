@@ -23,6 +23,6 @@ else:
 print('Downloading...')
 stream.download()
 if formatInput.lower() == 'audio':
-    rename(f'{yt.title}.mp4', f'{yt.title}.mp3')
+    rename(f'{(yt.title.replace("/", ""))}.mp4', f'{(yt.title.replace("/", ""))}.mp3')
 
 print('Downloaded!')
